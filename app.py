@@ -6,7 +6,6 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dateutil.parser
-from money import Money
 
 
 #from sfManager import sf_Manager
@@ -88,7 +87,3 @@ def indicator_four(color, text, id_value):
 
     )
 
-def to_dollar (amount):
-    cash=Money(amount,'USD')
-    dollar_amount=cash.format('en_US')
-    return dollar_amount
